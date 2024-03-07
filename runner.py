@@ -12,7 +12,7 @@ def list():
         sys.export()    
     
 
-@flow(name="CDS Analysis Runner")
+@flow(name="CDS Log Analysis")
 def runner(bucket):
     logger = get_run_logger()
     logger.info(list(bucket))
