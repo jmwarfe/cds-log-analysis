@@ -7,7 +7,7 @@ import json
 def list(bucket):
     s3_client = boto3.client('s3')
     # Get a list of buckets
-    buckets = s3_client.list_buckets()['Buckets']
+    buckets = s3_client.list_buckets()
     return(json.dumps(buckets, indent=2 , default=str))
     sys.exit()
         
